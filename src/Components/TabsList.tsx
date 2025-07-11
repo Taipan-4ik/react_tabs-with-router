@@ -9,7 +9,7 @@ export const TabsList: React.FC = () => {
   ];
   const { tabId } = useParams();
   const contentResult = tabs.find(tab => tab.id === tabId);
-  const selectedTabId = tabId ? tabId : 0;
+  const selectedTabId = tabId ? tabId : '';
 
   return (
     <>
